@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentmentorconnect</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+        <nav>
+            <ul>
+                <li><a href="#mentors">Mentors</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#apply">Apply as a Mentor</a></li>
+            </ul>
+        </nav>
+        <h1>Studentmentorconnect</h1>
+        <p>Connecting students with mentors for career development</p>
+    </header>
+    <main>
+        <section id="mentors">
+            <h2>Meet Our Mentors</h2>
+             <div class="mentor">
+                <img src="assets/mentor1.jpg" alt="Mentor 1">
+                <h3>Kerry Ritter</h3>
+                <p>Hey,I'm Kerry and i spent the last decade across finance,operations,customer experience and cloud.I can help you master data and financial analysis, strengthen your program management skills, and support you in becoming a thought leader within your organisation.Let's collaborate to accelerate your growth towards success</p>          
+            </div>
+            <div class="mentor">
+               <img src="assets/mentor2.jpg" alt="Mentor 2">
+               <h3>Victor Jarros</h3>  
+               <p>I'm a senior software engineer @ Microsoft i help startups and engineers build and ship great products.Whether you're an entrepreneur trying to get your application to the finish line or you're an engineer looking for a resume review, i can guide you to where you need to be</p>
+            </div>
+            <div class="mentor">
+               <img src="assets/mentor3.jpg" alt="Mentor 3">
+               <h3>Anna Peterson</h3>
+               <p>I'm a machine learning engineer.I landed my machine learning job in 4 months without a degree or experience.I've helped 60+ career changers in landing their dream jons with jobs with a lifestyle that seemed impossible in the beginning of their journeys.I'm here to help you bypass those unnecessary sufferings and learn how to take care of yourself and take care of your mind in this discouraging process of career transition</p>
+             </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Are you a student looking to start your dream career? Here's the solution.
+The primary objective of this website is to empower students in their career development journey by providing them with access to experienced mentors who can offer valuable guidance and support.The website aims to create a platform where students can easily find and connect with mentors who have expertise in various fields, especially in the areas of Career Advice and Resume Review.
+       </section>
+        <section id="apply">
+            <h2>Apply as a Mentor</h2>
+            <p>If you have expertise in career development and would like to become a mentor, please fill out the form below:</p>
+
+            
+            <form action="submit_mentor_application.php" method="post">
+        <label for="mentorName">Name:</label>
+        <input type="text" id="mentorName" name="mentorName" required>
+
+        <label for="mentorCategory">Mentorship Category:</label>
+        <select id="mentorCategory" name="mentorCategory">
+            <option value="Career Advice">Career Advice</option>
+            <option value="Resume Review">Resume Review</option>
+            <!-- Add more categories if needed -->
+        </select>
+
+        <label for="mentorExperience">Years of Experience:</label>
+        <input type="number" id="mentorExperience" name="mentorExperience" required>
+
+        <label for="mentorDescription">Brief Description:</label>
+        <textarea id="mentorDescription" name="mentorDescription" required></textarea>
+
+        <button type="submit">Submit Application</button>
+         </form>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Studentconnectmentor. Some images and texts sourced from <a href=https://mentorcruise.com/>source</a>.</p>
+
+    </footer>
+</body>
+</html>    
